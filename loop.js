@@ -69,7 +69,9 @@ function number() {
   for (let i = 0; i <= 15; i++) {
     if (i % 2 === 0) {
       console.log(`${i} is even.`);
-    } else console.log(`${i} is odd.`);
+    } else {
+      console.log(`${i} is odd.`);
+    }
   }
 }
 number();
@@ -78,7 +80,22 @@ function oddEven() {
   for (let i = 0; i <= 15; i++) {
     if (i % 2 === 0) {
       console.log(i, "is even");
-    } else console.log(i, "is odd");
+    } else {
+      console.log(i, "is odd");
+    }
+  }
+}
+number();
+
+// Using While loop
+let i = 0;
+while (i <= 15) {
+  if (i % 2 === 0) {
+    console.log(i, "is even");
+    i++;
+  } else {
+    console.log(i, "is odd");
+    i++;
   }
 }
 number();
